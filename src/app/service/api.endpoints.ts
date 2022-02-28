@@ -6,8 +6,6 @@ export class ApiEndpoints {
   /** Url Base */
   public url_base: string = environment.host + '/pokemons';
 
-
-
   /** CONSULTAR (GET) */
   public getByIdAuthor: string = this.url_base + '/?idAuthor=';
 

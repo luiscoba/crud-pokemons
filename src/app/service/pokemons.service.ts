@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 
+import { Pokemon } from '../model/pokemon.model';
+
 /**
  * Servicio para la api de pokemons
  */
@@ -22,28 +24,7 @@ export class PokemonsService {
     return this.http.get(this.url_base + '/?name=' + name);
   }
 
-  /* 
-  public getByIdAuthor(idAuthor: number) {
-    return this.http.get(this.endpoints.getByIdAuthor + idAuthor);
+  public createByIdAuthor(pokemon: Pokemon) {
+    return this.http.post(this.url_base + '/?idAuthor=7', pokemon);
   }
-
-  public createByIdAuthor(pokemon: number) {
-    return this.http.post(this.endpoints.createByIdAuthor, pokemon);
-  }
-
-  public getCountByIdAuthor(idAuthor: number) {
-    return this.http.get(this.endpoints.getCountByIdAuthor + idAuthor);
-  }
-
-  public getById(id: number) {
-    return this.http.get(`${this.endpoints.getById}/${id}`);
-  }
-
-  public updateById(id: number) {
-    return this.http.get(this.endpoints.updateById + id);
-  }
-
-  public deleteById(id: number) {
-    return this.http.get(this.endpoints.deleteById + id);
-  } */
 }

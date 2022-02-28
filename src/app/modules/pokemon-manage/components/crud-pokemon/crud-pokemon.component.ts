@@ -11,9 +11,7 @@ import { CrudPokemonPresenter } from './presenter/crud-pokemon.presenter';
   templateUrl: './crud-pokemon.component.html',
   styleUrls: ['./crud-pokemon.component.css'],
 })
-export class CrudPokemonComponent
-  extends AbstractView
-  implements OnInit, CrudPokemonView
+export class CrudPokemonComponent extends AbstractView implements OnInit, CrudPokemonView
 {
   nameSearchPokemon = '';
   isNew = false;

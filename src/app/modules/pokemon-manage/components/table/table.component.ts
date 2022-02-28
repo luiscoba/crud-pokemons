@@ -23,7 +23,7 @@ export class TableComponent extends AbstractView implements OnInit, TableView {
     this.tablePresenter.getAllPokemons();
   }
 
-  updatePokemon(pokemon: Pokemon): void {
+  updatePokemon(pokemon: any): void {
     this.tablePresenter.getById(pokemon.id);
   }
 
