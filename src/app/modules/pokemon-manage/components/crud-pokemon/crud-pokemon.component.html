@@ -14,7 +14,7 @@
 
     <app-table id="b" [listPokemons]="pokemonBySearch"></app-table>
 
-    <app-edit id="b" *ngIf="isNew"></app-edit>
+    <app-edit id="b" *ngIf="isNew" (isVisible)="onIsVisible()"></app-edit>
 
   </div>
 </div>

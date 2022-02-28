@@ -36,4 +36,8 @@ export class CrudPokemonComponent
 
     this.crudPokemonPresenter.getPokemonByName();
   }
+
+  onIsVisible() {
+    this.isNew = false;
+  }
 }

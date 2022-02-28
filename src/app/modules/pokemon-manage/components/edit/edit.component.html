@@ -1,42 +1,41 @@
 <div id="a">
-    <div id="b" class="card">
-      <h4 class="center-title">Nuevo Pokemon</h4>
-      <form [formGroup]="pokemonForm">
-        <div class="row">
-          <div class="column">
-            <label for="name">Nombre: </label>
-            <input id="name" class="i-height" type="text" formControlName="name">
-          </div>
-          <div class="column">
-            <label for="name">Ataque: </label>
-            0
-            <input type="range" id="a" name="a" value="50">
-            100
-          </div>
+  <div id="b" class="card">
+    <h4 class="center-title">Nuevo Pokemon</h4>
+    <form [formGroup]="pokemonForm">
+      <div class="row">
+        <div class="column">
+          <label for="name">Nombre: </label>
+          <input id="name" class="i-height" type="text" formControlName="name">
         </div>
-        <div class="row">
-          <div class="column">
-            <label for="image">Imagen: </label>
-            <input id="image" class="i-height" type="text" formControlName="image">
-          </div>
-          <div class="column">
-            <label for="name">Defensa: </label>
-            0
-            <input type="range" id="a" name="a" value="50">
-            100
-          </div>
+        <div class="column">
+          <label for="name">Ataque: </label>
+          0
+          <input type="range" id="a" name="a" value="50">
+          100
         </div>
-        <div class="row-btn">
-          <button class="btn" type="submit">
-            <i class="fa fa-floppy-o"></i>
-            Guardar
-          </button>
-          <button class="btn m-left" type="button">
-            <i class="fa fa-remove"></i>
-            Cancelar
-          </button>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="image">Imagen: </label>
+          <input id="image" class="i-height" type="text" formControlName="image">
         </div>
-      </form>
-    </div>
+        <div class="column">
+          <label for="name">Defensa: </label>
+          0
+          <input type="range" id="a" name="a" value="50">
+          100
+        </div>
+      </div>
+      <div class="row-btn">
+        <button class="btn" type="submit">
+          <i class="fa fa-floppy-o"></i>
+          Guardar
+        </button>
+        <button class="btn m-left" type="button" (click)="cancel()">
+          <i class="fa fa-remove"></i>
+          Cancelar
+        </button>
+      </div>
+    </form>
   </div>
-  
+</div>
