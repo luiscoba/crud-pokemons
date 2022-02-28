@@ -1,0 +1,20 @@
+<div id="a">
+  <div>
+    <h4>Listado de Pokemon</h4>
+
+    <div id="b" class="flex-between">
+      <input id="name" placeholder="Buscar" type="text" (keyup)="onSearch($event)" maxlength="20">
+      <button class="btn" type="button" (click)="isNew=true">
+        <i class="fa fa-plus"></i>
+        Nuevo
+      </button>
+    </div>
+
+    <br>
+
+    <app-table id="b" [listPokemons]="pokemonBySearch"></app-table>
+
+    <app-edit id="b" *ngIf="isNew"></app-edit>
+
+  </div>
+</div>

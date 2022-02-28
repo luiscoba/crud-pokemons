@@ -1,0 +1,61 @@
+.card {
+  box-shadow: 0 4px 8px 0 #cccccc;
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  width: 100%;
+  padding-left: 30px;
+  line-height: 60px;
+}
+
+.row-btn {
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  line-height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.m-left {
+  margin-left: 10px;
+}
+
+.btn {
+  font-size: 15px;
+  color: white;
+  background-color: rgb(144, 97, 252);
+  width: 10em;
+  height: 2.8em;
+  border-radius: 6px;
+  border-color: rgb(166, 128, 255);
+}
+
+.btn:hover {
+  background-color: rgb(162, 122, 255);
+}
+
+#b {
+  width: calc(100% - 30px);
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.center-title {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.i-height {
+  height: 35px;
+}

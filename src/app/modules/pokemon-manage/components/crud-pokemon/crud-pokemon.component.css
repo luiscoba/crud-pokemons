@@ -1,0 +1,31 @@
+* {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #a {
+    padding-left: 30px;
+  }
+  
+  #b {
+    width: calc(100% - 30px);
+  }
+  
+  .btn {
+    font-size: 15px;
+    color: white;
+    background-color: rgb(144, 97, 252);
+    width: 10em;
+    height: 2.8em;
+    border-radius: 6px;
+    border-color: rgb(166, 128, 255);
+  }
+  
+  .btn:hover {
+    background-color: rgb(162, 122, 255);
+  }
+  

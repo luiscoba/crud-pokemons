@@ -1,0 +1,26 @@
+<div id="a">
+    <table id="b">
+      <thead>
+        <th class="p-x">Nombre</th>
+        <th class="p-x">Imagen</th>
+        <th class="p-x">Ataque</th>
+        <th class="p-x">Defensa</th>
+        <th class="p-x">Acciones</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pokemon of listPokemons">
+          <td class="p-left">{{pokemon.name}}</td>
+          <td class="center">
+            <img [src]="pokemon.image" [alt]="pokemon.name" width="50" height="50">
+          </td>
+          <td class="p-left">{{pokemon.attack}}</td>
+          <td class="p-left">{{pokemon.defense}}</td>
+          <td class="flex-around">
+            <i class="material-icons btn" (click)="updatePokemon(pokemon)">edit</i>
+            <i class="material-icons btn" (click)="deletePokemon(pokemon)">delete</i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

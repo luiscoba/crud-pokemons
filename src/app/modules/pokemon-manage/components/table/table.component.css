@@ -1,0 +1,40 @@
+table,
+th,
+td {
+  border: 2px solid #cccccc;
+  border-collapse: collapse;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#b {
+  width: calc(100% - 30px);
+}
+
+.btn {
+  color: rgb(144, 97, 252);
+  padding: 15px 0px 15px 0px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.p-left {
+  padding-left: 15px;
+}
+
+.p-x {
+  padding: 10px 0px 15px 0px;
+}
