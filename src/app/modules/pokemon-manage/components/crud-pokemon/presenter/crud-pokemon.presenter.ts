@@ -25,6 +25,8 @@ export class CrudPokemonPresenter implements Presenter {
   getAllPokemons(): void {
     this.pokemonsService.getAllPokemons().subscribe((data: any) => {
       this.view.pokemonBySearch = data;
+
+      console.log('this.view.pokemonBySearch', this.view.pokemonBySearch);
     });
   }
 }

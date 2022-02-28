@@ -20,4 +20,14 @@ export class EditComponent implements OnInit {
   cancel() {
     this.isVisible.emit(false);
   }
+
+  validatePokemon(): void {
+    if (this.pokemonForm.valid) {
+      this.savePokemon();
+    }
+  }
+  savePokemon() {
+    console.log('this.pokemonForm.value', this.pokemonForm.value);
+    // const pokemon: Pokemon = this.pokemonForm.value;
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { AbstractView } from 'src/app/core/abstract_view';
 import { Pokemon } from 'src/app/model/pokemon.model';
@@ -21,6 +21,8 @@ export class CrudPokemonComponent
   pokemonBySearch: any = [{}];
   listPokemons: Pokemon[] = [];
 
+  @Output() sendMessage: EventEmitter<string> = new EventEmitter<string>();
+
   constructor(
     router: Router,
     private crudPokemonPresenter: CrudPokemonPresenter
@@ -29,7 +31,13 @@ export class CrudPokemonComponent
     crudPokemonPresenter.view = this;
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.onMessage();
+  }
+
+  onMessage() {
+    this.sendMessage.emit('Hellow');
+  }
 
   onSearch(search: any): void {
     this.nameSearchPokemon = search.target.value;
